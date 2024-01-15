@@ -9,8 +9,7 @@ while True:
         total_inserted_coins = inserted_coin + total_inserted_coins
         if total_inserted_coins < COKE_PRICE:
             amount_due = COKE_PRICE - total_inserted_coins
-            print("Amount Due: ", amount_due)
-            continue
+            print("Amount Due:", amount_due)
         elif total_inserted_coins >= COKE_PRICE:
             change_owed = total_inserted_coins - COKE_PRICE
             print("Change Owed:", change_owed)
